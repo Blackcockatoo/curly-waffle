@@ -64,6 +64,7 @@
       -webkit-text-fill-color: transparent;
       animation: gradient-shift 3s ease infinite;
       margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(255,215,0,0.5), 0 0 20px rgba(255,107,107,0.3);
     }
     
     @keyframes gradient-shift {
@@ -377,15 +378,54 @@
     ::-webkit-scrollbar-thumb:hover { 
       background: linear-gradient(180deg, #764ba2, #667eea); 
     }
+    
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,215,0,.2);
+    }
+    
+    .nav-link {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: #88d8ff;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    
+    .nav-link:hover {
+      color: #ffd700;
+      text-shadow: 0 0 10px rgba(255,215,0,.8);
+    }
+    
+    .nav-link.active {
+      color: #ffd700;
+      border: 1px solid #ffd700;
+      background: rgba(255,215,0,.1);
+      box-shadow: 0 0 15px rgba(255,215,0,.5);
+    }
   </style>
 </head>
 <body>
   <div class="consciousness-field"></div>
   
   <header>
-    <h1>MOSS60</h1>
-    <div class="subtitle">CONSCIOUSNESS FIELD MODULATION ENGINE</div>
+    <h1>MOSS60 CONSCIOUSNESS</h1>
+    <div class="subtitle">PSYCHOACOUSTIC REALITY ENGINE</div>
   </header>
+  
+  <div class="nav-bar">
+    <a href="moss60-consciousness.html" class="nav-link active">Consciousness Field</a>
+    <a href="moss60-enhanced-security-3d.html" class="nav-link">Enhanced Security 3D</a>
+  </div>
 
   <div class="container">
     <div class="main-grid">
